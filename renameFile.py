@@ -2,9 +2,8 @@ import os
 import re
 import natsort # https://stackoverflow.com/questions/2545532/python-analog-of-phps-natsort-function-sort-a-list-using-a-natural-order-alg
 
-print("Quelle est le chemin du dossier a renommer ?")
-# Passer le copier coller du chemin
-chemin = input("") + '\\'
+# Saisie du chemin à renommer
+chemin = input("Quelle est le chemin du dossier a renommer ?") + '\\'
 print(chemin)
 # Liste de l'ensemble des fichiers présent
 listeFichiers = natsort.natsorted( os.listdir(chemin) )
